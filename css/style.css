@@ -29,27 +29,32 @@ body {
 }
 .navigation-top {
     height: 40px;
-    background-color: #515151;
+    background: #5e5e5e; /* Old browsers */
+    background: -moz-linear-gradient(top, #5e5e5e 0%, #595959 26%, #494848 77%, #454444 100%);
+    background: -webkit-linear-gradient(top, #5e5e5e 0%, #595959 26%, #494848 77%, #454444 100%); 
+    background: linear-gradient(to bottom, #5e5e5e 0%, #595959 26%, #494848 77%, #454444 100%); 
 }
 .navigation-top li {
-    width: 90px;
     display: inline-block;
-    padding-right: 20px;
-    padding-left: 20px;
-    line-height: 38px;
+    line-height: 40px;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
 }
-.navigation-top li:hover {
-    width: 88px;
-    background-color: #393939;
-    border-right: 1px solid #838383;
-    border-left: 1px solid #838383;
-}
 .navigation-top li a {
+    display: block;
+    padding-right: 35px;
+    padding-left: 35px;
     text-decoration: none;
     color: white;
+}
+.navigation-top li a:hover {
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+    background: #4a4a4a; /* Old browsers */
+    background: -moz-linear-gradient(top, #4a4a4a 0%, #444444 28%, #343434 74%, #2e2e2e 100%);
+    background: -webkit-linear-gradient(top, #4a4a4a 0%, #444444 28%, #343434 74%, #2e2e2e 100%);
+    background: linear-gradient(to bottom, #4a4a4a 0%, #444444 28%, #343434 74%, #2e2e2e 100%);
 }
 .main {
     margin-top: 40px;
@@ -80,28 +85,33 @@ body {
     line-height: 22px;
     color: #2c2c2c;
 }
-.aside {
-    border-right: 1px solid #c8c8c8;
-    border-left: 1px solid #c8c8c8;
+.left_menu {
+    list-style: none;    
     width: 240px;
+    border-right: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;   
 }
 .left_menu li:first-child {
     border-top: 1px solid #c8c8c8;
 }
 .left_menu li {
-    padding-left: 40px;
     border-bottom: 1px solid #c8c8c8;
-    list-style: none;
     font-size: 12px;
     line-height: 38px;
 }
 .left_menu li a {
+    display: block;
     color: #656363;
+    padding-left: 40px;
     text-decoration: none;
 }
 .left_menu li a:hover {
     color: #2c2c2c;
     margin-left: 15px;
+}
+.left_menu li:hover {
+    background-color: #f9f9f9;
+    
 }
 footer {
     margin-top: 30px;
