@@ -51,6 +51,8 @@ body {
 .navigation-top li a:hover {
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
+    padding-right: 34px;
+    padding-left: 34px;
     background: #4a4a4a; /* Old browsers */
     background: -moz-linear-gradient(top, #4a4a4a 0%, #444444 28%, #343434 74%, #2e2e2e 100%);
     background: -webkit-linear-gradient(top, #4a4a4a 0%, #444444 28%, #343434 74%, #2e2e2e 100%);
